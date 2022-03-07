@@ -72,15 +72,16 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](LICENSE).
 
-
 ### Personal thought on Nestjs
 
 ## Pros
-  1. Clean structure, each feature will be under a Module, inside module, there are Controller/Service
-  2. Very powerful framework which supplies built-in Route, ModelBinding, Test support, etc
-  3. Very similar to other OO backend language, easy to pick up by, for example, .net core API dev 
-  4. The Ioc Container is very similar to Angular's, easy to pick up by Angular dev
+
+1. Clean structure, each feature will be under a Module, inside module, there are Controller/Service
+2. Very powerful framework which supplies built-in Route, ModelBinding, Test support, etc
+3. Very similar to other OO backend language, easy to pick up by, for example, .net core API dev
+4. The Ioc Container is very similar to Angular's, easy to pick up by Angular dev
 
 ## Cons
-  1. Too many decorators, Body, Param, etc for model/param binding, Get/Post/Patch/Delete etc for Route mapping
-  2. Dependency Injection complicated, especially cross module, export provider, then import module in consumer module
+
+1. Too many decorators, Body, Param, etc for model/param binding, Get/Post/Patch/Delete etc for Route mapping
+2. Dependency Injection complicated, especially cross module, export provider, then import module in consumer module

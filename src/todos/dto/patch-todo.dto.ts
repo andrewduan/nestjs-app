@@ -1,4 +1,4 @@
 export class PatchTodoDto {
-    public taskName: string;
-    public isCompleted: boolean;
+  public taskName: string;
+  public isCompleted: boolean;
 }

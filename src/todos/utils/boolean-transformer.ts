@@ -14,7 +14,7 @@ export const ToBoolean = () => {
     },
     {
       toPlainOnly: true,
-    }
+    },
   );
   const toClass = (target: any, key: string) => {
     return Transform(
@@ -23,7 +23,7 @@ export const ToBoolean = () => {
       },
       {
         toClassOnly: true,
-      }
+      },
     )(target, key);
   };
   return function (target: any, key: string) {

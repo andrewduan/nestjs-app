@@ -1,11 +1,11 @@
-import { IsOptional } from "class-validator";
-import { ToBoolean } from "../utils/boolean-transformer";
+import { IsOptional } from 'class-validator';
+import { ToBoolean } from '../utils/boolean-transformer';
 
 export class FilterTodosDto {
-    @IsOptional()
-    @ToBoolean()
-    isCompleted?: boolean;
+  @IsOptional()
+  @ToBoolean()
+  isCompleted?: boolean;
 
-    @IsOptional()
-    search: string;
+  @IsOptional()
+  search: string;
 }
