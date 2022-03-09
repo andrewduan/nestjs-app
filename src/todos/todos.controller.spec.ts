@@ -4,17 +4,13 @@ import { Todo } from './todo.model';
 import { TodosService } from './todos.service';
 import {
   todo1Dto,
-  todo2Dto,
-  todo1InDb,
   todo2InDb,
   todosInDbArray,
   todosDtoArray,
 } from './test/shared-data';
-import { AddTodoDto } from './dto/add-todo.dto';
 
 describe('Todo Controller', () => {
   let controller: TodosController;
-  let service: TodosService;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
@@ -26,7 +22,7 @@ describe('Todo Controller', () => {
             getAll: jest.fn().mockResolvedValue(todosInDbArray),
             getOne: jest
               .fn()
-              .mockImplementation((id: string) => Promise.resolve(todo2InDb)),
+              .mockImplementation(() => Promise.resolve(todo2InDb)),
             insertOne: jest
               .fn()
               .mockImplementation((todo: Todo) => Promise.resolve({ ...todo })),
@@ -51,7 +47,6 @@ describe('Todo Controller', () => {
     }).compile();
 
     controller = module.get<TodosController>(TodosController);
-    service = module.get<TodosService>(TodosService);
   });
 
   it('should be defined', () => {
