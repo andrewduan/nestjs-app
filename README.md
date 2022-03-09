@@ -80,8 +80,10 @@ Nest is [MIT licensed](LICENSE).
 2. Very powerful framework which supplies built-in Route, ModelBinding, Test support, etc
 3. Very similar to other OO backend language, easy to pick up by, for example, .net core API dev
 4. The Ioc Container is very similar to Angular's, easy to pick up by Angular dev
+5. Well documented
 
 ## Cons
 
 1. Too many decorators, Body, Param, etc for model/param binding, Get/Post/Patch/Delete etc for Route mapping
 2. Dependency Injection complicated, especially cross module, export provider, then import module in consumer module
+3. Dependent heavily on other library, such as rxjs, class-validator, class-transformer etc
