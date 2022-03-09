@@ -87,3 +87,6 @@ Nest is [MIT licensed](LICENSE).
 1. Too many decorators, Body, Param, etc for model/param binding, Get/Post/Patch/Delete etc for Route mapping
 2. Dependency Injection complicated, especially cross module, export provider, then import module in consumer module
 3. Dependent heavily on other library, such as rxjs, class-validator, class-transformer etc
+
+## To improve
+1. Add e2e test
