@@ -3,7 +3,6 @@ import { TodosModule } from './todos/todos.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import configuration from './config/configuration';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { TodoSchema } from './schemas/todo.schema';
 @Module({
   imports: [
     TodosModule,

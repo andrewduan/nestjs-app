@@ -4,7 +4,6 @@ import { getModelToken } from '@nestjs/mongoose';
 import { Todos } from '../schemas/todo.schema';
 import { Model } from 'mongoose';
 import {
-  todo1Dto,
   todo2Dto,
   todo2InDb,
   todosInDbArray,
