@@ -683,7 +683,7 @@
     jsonc-parser "3.0.0"
     pluralize "8.0.0"
 
-"@nestjs/testing@^8.0.0":
+"@nestjs/testing@^8.4.0":
   version "8.4.0"
   resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-8.4.0.tgz#c727fc427d753f106d1c9b11383858a24518170d"
   integrity sha512-Gk9OW4RpiIGDOROHS7O271uJEpIddQP94zlkPOVOu3HPUxntfKbmDU4cDaCqC0PQ9Jtj71C0H1j9RS8ituYLAw==
