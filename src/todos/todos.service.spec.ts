@@ -8,6 +8,7 @@ import {
   todo2InDb,
   todosInDbArray,
   todosDtoArray,
+  todo1Dto,
 } from './test/shared-data';
 
 const mockTodo = {
@@ -56,27 +57,27 @@ describe('TodosService', () => {
     expect(todos).toEqual(todosDtoArray);
   });
 
-  //   it('should return todo with specified criteria', async () => {
-  //     jest.spyOn(model, 'find').mockReturnValue({
-  //       exec: jest.fn().mockResolvedValueOnce(todosInDbArray),
-  //     } as any);
-  //     const todo = await service.getFilteredTodos({
-  //       isCompleted: true,
-  //       search: 'test',
-  //     });
-  //     expect(todo).toEqual([todo1Dto]);
-  //   });
+  it('should return todo with specified criteria', async () => {
+    jest.spyOn(model, 'find').mockReturnValue({
+      exec: jest.fn().mockResolvedValueOnce(todosInDbArray),
+    } as any);
+    const todo = await service.getFilteredTodos({
+      isCompleted: true,
+      search: 'test',
+    });
+    expect(todo).toEqual([todo1Dto]);
+  });
 
-  //   it('should return empty array when no todo matches specified criteria', async () => {
-  //     jest.spyOn(model, 'find').mockReturnValue({
-  //       exec: jest.fn().mockResolvedValueOnce(todosInDbArray),
-  //     } as any);
-  //     const todo = await service.getFilteredTodos({
-  //       isCompleted: false,
-  //       search: 'non_exist',
-  //     });
-  //     expect(todo).toEqual([]);
-  //   });
+  it('should return empty array when no todo matches specified criteria', async () => {
+    jest.spyOn(model, 'find').mockReturnValue({
+      exec: jest.fn().mockResolvedValueOnce(todosInDbArray),
+    } as any);
+    const todo = await service.getFilteredTodos({
+      isCompleted: false,
+      search: 'non_exist',
+    });
+    expect(todo).toEqual([]);
+  });
 
   it('should return todo with specified id', async () => {
     jest.spyOn(model, 'findOne').mockReturnValue({
